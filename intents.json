@@ -1,0 +1,312 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "xin chao", "chao", "Hey", "Hello", "xin chao ban"],
+      "responses": [
+        "xin chao ban, ban can toi giup gi?",
+        "chao ban, ban can tu van gi nao?"
+      ]
+    },
+    {
+      "tag": "ai",
+      "patterns": [
+        "xin chao, ban la ai",
+        "co the cho toi biet ban la ai?",
+        "ban la ai"
+      ],
+      "responses": ["toi co the giup ban tra loi cac thac mac"]
+    },
+    {
+      "tag": "hocnganhCNTT",
+      "patterns": [
+        "Hoc cong nghe thong tin o dau tot nhat",
+        "Hoc IT o dau tot nhat",
+        "Hoc CNTT o dau tot nhat",
+        "Hoc nganh cong nghe thong tin o dau tot nhat",
+        "Hoc nganh IT o dau tot nhat",
+        "Hoc nganh CNTT o dau tot nhat"
+      ],
+      "responses": [
+        "mien Bac: DH BK HaNoi, mien Trung: DH BK DaNang, mien Nam: DH BK HCM"
+      ]
+    },
+    {
+      "tag": "hocnganhY",
+      "patterns": ["Hoc Y o dau tot nhat", "Hoc nganh y o dau tot nhat"],
+      "responses": [
+        "mien Bac: DH Y HaNoi, DH Duoc HaNoi , mien Trung: DH Y Duoc Hue, mien Nam: DH Y Duoc TP.HCM"
+      ]
+    },
+    {
+      "tag": "hocnganhQTKD",
+      "patterns": ["Hoc Y o dau tot nhat", "Hoc nganh y o dau tot nhat"],
+      "responses": [
+        "mien Bac: DH Y HaNoi, DH Duoc HaNoi , mien Trung: DH Y Duoc Hue, mien Nam: DH Y Duoc TP.HCM"
+      ]
+    },
+    {
+      "tag": "hocCNTTDN",
+      "patterns": [
+        "Nen hoc CNTT truong nao o Da Nang",
+        "Nen hoc nganh CNTT truong nao o Da Nang",
+        "Nen hoc cong nghe thong tin truong nao o Da Nang",
+        "Nen hoc IT truong nao o Da Nang"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH BK DaNang, DH DuyTan hoac FPT"
+      ]
+    },
+    {
+      "tag": "hocCNTTMT",
+      "patterns": [
+        "mien Trung co nhung truong cong nghe thong tin nao",
+        "mien Trung co nhung truong IT nao"
+      ],
+      "responses": [
+        "nhung truong CNTT o mien Trung la: DH BK DaNang, DH DuyTan, DH FPT, DH Khoa hoc Hue"
+      ]
+    },
+    {
+      "tag": "gioiToan",
+      "patterns": [
+        "minh gioi Toan thi hoc duoc nhung nganh gi",
+        "minh gioi mon Toan thi hoc duoc nhung nganh gi"
+      ],
+      "responses": [
+        "ban co the tham khao: nganh Tai Chinh Ngan Hang, nganh Quan Tri Kinh Doanh, nganh Ke Toan hoac nganh CNTT"
+      ]
+    },
+    {
+      "tag": "gioiVan",
+      "patterns": [
+        "minh gioi Van thi hoc duoc nhung nganh gi",
+        "minh gioi mon Van thi hoc duoc nhung nganh gi"
+      ],
+      "responses": ["ban co the tham khao: nganh Bao Chi, nganh Marketing"]
+    },
+    {
+      "tag": "gioiAnh",
+      "patterns": [
+        "minh gioi Anh thi hoc duoc nhung nganh gi",
+        "minh gioi mon Anh thi hoc duoc nhung nganh gi"
+      ],
+      "responses": [
+        "ban co the tham khao: nganh Du Lich, nganh Bien phien Dich TA"
+      ]
+    },
+    {
+      "tag": "gioiAnh",
+      "patterns": [
+        "minh gioi Anh thi hoc duoc nhung nganh gi",
+        "minh gioi mon Anh thi hoc duoc nhung nganh gi"
+      ],
+      "responses": [
+        "ban co the tham khao: nganh Du Lich, nganh Bien phien Dich TA"
+      ]
+    },
+    {
+      "tag": "TKnganhDT",
+      "patterns": [
+        "minh muon biet tat ca nganh hoc o Duy Tan thi vao dau de xem",
+        "minh muon biet tat ca nganh hoc o truong DH Duy Tan thi vao dau de xem",
+        "muon biet tat ca nganh hoc o Duy Tan thi vao dau de xem",
+        "muon biet tat ca nganh hoc o truong DH Duy Tan thi vao dau de xem"
+      ],
+      "responses": ["ban vao link nay ne: http://127.0.0.1:5000/"]
+    },
+    {
+      "tag": "TKnganh",
+      "patterns": [
+        "minh muon biet tat ca nganh hoc thi vao dau de xem",
+        "minh muon xem tat ca nganh hoc thi lam sao",
+        "muon biet xem nganh hoc thi lam sao",
+        "muon biet tat ca nganh hoc thi vao dau de xem"
+      ],
+      "responses": ["ban vao trang chi tiet moi truong -> chon nganh hoc"]
+    },
+    {
+      "tag": "HPnganhIT",
+      "patterns": [
+        "hoc phi nganh cong nghe thong tin khoang bao nhieu",
+        "hoc phi nganh cong nghe khoang bao nhieu",
+        "hoc phi nganh CNTT khoang bao nhieu",
+        "hoc phi nganh IT khoang bao nhieu",
+        "hoc phi cong nghe thong tin khoang bao nhieu",
+        "hoc phi cong nghe khoang bao nhieu",
+        "hoc phi IT khoang bao nhieu"
+      ],
+      "responses": ["Khoang 20tr- 60tr VND"]
+    },
+    {
+      "tag": "ChontruongITDT",
+      "patterns": [
+        "giua Duy Tan va Cao Dang cong nghe thi nen chon truong nao",
+        "giua DH Duy Tan va Cao Dang cong nghe thi nen chon truong nao",
+        "giua truong Duy Tan va Cao Dang cong nghe thi nen chon truong nao",
+        "giua truong DH Duy Tan va Cao Dang cong nghe thi nen chon truong nao"
+      ],
+      "responses": ["minh nghi la Duy Tan"]
+    },
+    {
+      "tag": "vietRv",
+      "patterns": [
+        "lam sao de viet review cho moi truong",
+        "minh muon viet Review cho moi truong",
+        "muon viet reivew cho moi truong thi lam sao",
+        "minh muon viet review",
+        "lam sao de viet review cho truong",
+        "minh muon viet Review cho truong",
+        "muon viet reivew cho truong thi lam sao"
+      ],
+      "responses": ["ban nhan vao chi tiet moi truong -> topic -> viet topic "]
+    },
+    {
+      "tag": "xemRv",
+      "patterns": [
+        "lam sao de xem review cua moi truong",
+        "minh muon xem Review cua moi truong",
+        "muon xem reivew cua moi truong thi lam sao",
+        "minh muon xem review",       
+        "lam sao de xem review cua truong",
+        "minh muon xem Review cua truong",
+        "muon xem reivew cua truong thi lam sao"
+      ],
+      "responses": ["ban nhan vao chi tiet moi truong -> topic"]
+    },
+    {
+      "tag": "xemHP",
+      "patterns": [
+        "lam sao de xem hoc phi cua moi truong",
+        "minh muon xem hoc phi cua moi truong thi nhu the nao",
+        "muon xem hoc phi cua moi truong",
+        "xem hoc phi cua moi truong",
+        "lam sao de xem hoc phi cua truong",
+        "minh muon xem hoc phi cua truong thi nhu the nao",
+        "muon xem hoc phi cua truong",
+        "xem hoc phi cua truong"
+      ],
+      "responses": ["ban nhan vao chi tiet moi truong -> hoc phi "]
+    },
+    {
+      "tag": "HPkhoang",
+      "patterns": [
+        "hoc phi trong khoang 20 - 30tr thi co truong nao o mien Bac"
+      ],
+      "responses": [
+        "truong: Hoc vien Buu Chinh vien thong, hoac ban co the loc truong theo khu vuc va hoc phi o trang HomePage de biet them nhieu thong tin hon"
+      ]
+    },
+    {
+      "tag": "HDDT",
+      "patterns": [
+        "cac hoat dong truong Duy Tan la gi",
+        "cac hoat dong o truong Duy Tan la gi",
+        "cac hoat dong Duy Tan la gi"
+      ],
+      "responses": [
+        "co cac tro choi cac ngay nhu: ngay Hoc sinh, sinh vien. 26/3..... cac giai bong da"
+      ]
+    },
+    {
+      "tag": "HBDT",
+      "patterns": [
+        "de co hoc bong o truong Duy tan thi nhu the nao",
+        "de co hoc bong o Duy tan thi nhu the nao",
+        "de co hoc bong o truong DH Duy tan thi nhu the nao"
+      ],
+      "responses": [
+        "dien thi dai hoc >= 23d"
+      ]
+    },
+    {
+      "tag": "HTXT",
+      "patterns": [
+        "cac hinh thuc xet tuyen dh Duy tan",
+        "cac hinh thuc xet tuyen cua dh Duy tan",
+        "cac hinh thuc xet tuyen cua truong DH Duy tan"
+      ],
+      "responses": [
+        "DH Duy Tan xet tuyen bang Hoc ba va Dien thi TN"
+      ]
+    },
+    {
+      "tag": "HTXTDH",
+      "patterns": [
+        "cac hinh thuc xet tuyen la gi",
+        "cac hinh thuc xet tuyen truong DH la gi"
+      ],
+      "responses": [
+        "hinh thuc xet tuyen: DH tu thuc:Hoc Ba & Diem thi, DH cong: Diem thi TN"
+      ]
+    },
+    {
+      "tag": "HK",
+      "patterns": [
+        "mot hoc ki keo dai bao lau",
+        "mot ki hoc keo dai bao lau"
+      ],
+      "responses": [
+        "thong thuong thi 4 thang"
+      ]
+    },
+    {
+      "tag": "HTXTDH",
+      "patterns": [
+        "cac hinh thuc xet tuyen la gi",
+        "cac hinh thuc xet tuyen truong DH la gi"
+      ],
+      "responses": [
+        "hinh thuc xet tuyen: DH tu thuc:Hoc Ba & Diem thi, DH cong: Diem thi TN"
+      ]
+    },
+    {
+      "tag": "TMDH",
+      "patterns": [
+        "nganh mui nhon cua DH Duy Tan la gi",
+        "nganh mui nhon cua truong DH Duy Tan la gi",
+        "the manh cua truong DH Duy tan la gi"
+      ],
+      "responses": [
+        "nganh mui nhon cua DH Duy Tan la: CNTT, Co Khi"
+      ]
+    },
+    {
+      "tag": "DTHB",
+      "patterns": [
+        "lam sao de duy tri hoc bong qua tung nam",
+        "duy tri hoc bong qua tung nam"
+      ],
+      "responses": [
+        "Diem trung binh toan khoa >=3.2"
+      ]
+    },
+    {
+      "tag": "TMDH",
+      "patterns": [
+        "nganh mui nhon cua DH Duy Tan la gi",
+        "nganh mui nhon cua truong DH Duy Tan la gi",
+        "the manh cua truong DH Duy tan la gi"
+      ],
+      "responses": [
+        "nganh mui nhon cua DH Duy Tan la: CNTT"
+      ]
+    },
+
+    
+
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "tam biet", "Goodbye"],
+      "responses": [
+        "heb gap lai ban"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "cam on", "ok"],
+      "responses": ["khong co gi dau ne"]
+    }
+    
+  ]
+}

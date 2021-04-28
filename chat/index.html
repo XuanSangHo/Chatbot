@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid h-100">
+        <div class="row justify-content-center h-100">
+            <div class="col-md-8 col-xl-6 chat">
+                <div class="card">
+                    <!-- ======================phần header=====================  -->
+                    <div class="card-header msg_head">
+                        <div class="d-flex bd-highlight">
+                            <div class="img_cont">
+                                <img src="images/thien1.jpg" class="rounded-circle user_img">
+                                <span class="online_icon"></span>
+                            </div>
+                            <div class="user_info">
+                                <span>Nguyễn Hữu Thiện</span>
+                                <p>910 tin nhắn</p>
+                            </div>
+                            <div class="video_cam">
+                                <span><i class="fas fa-video"></i></span>
+                                <span><i class="fas fa-phone"></i></span>
+                            </div>
+                        </div>
+                        <span id="action_menu_btn"><i class="fas fa-ellipsis-v"></i></span>
+                        <div class="action_menu">
+                            <ul>
+                                <li><i class="fas fa-user-circle"></i> Xem hồ sơ</li>
+                                <li><i class="fas fa-ban"></i>chặn</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--================================ phần body chat ========================== -->
+                    <div class="card-body msg_card_body">
+                        <!-- người dùng  -->
+                        <div class="d-flex justify-content-start mb-4">
+                            <div class="img_cont_msg">
+                                <img src="images/thien1.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                            <div class="msg_cotainer">
+                                Hi, bạn vẫn còn thở chứ?
+                                <span class="msg_time">8:40, hôm nay</span>
+                            </div>
+                        </div>
+                        <!-- admin -->
+                        <div class="d-flex justify-content-end mb-4">
+                            <div class="msg_cotainer_send">
+                                hi, kệ mẹ tao? còn mi
+                                <span class="msg_time_send">8:55, hôm nay</span>
+                            </div>
+                            <div class="img_cont_msg">
+                        <img src="images/toi.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                        </div>
+
+
+                        <!-- người dùng  -->
+                        <div class="d-flex justify-content-start mb-4">
+                            <div class="img_cont_msg">
+                                <img src="images/thien1.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                            <div class="msg_cotainer">
+                                Ời, hỏi có chi hân ?
+                                <span class="msg_time">9:00, hôm nay</span>
+                            </div>
+                        </div>
+                        <!-- admin -->
+                        <div class="d-flex justify-content-end mb-4">
+                            <div class="msg_cotainer_send">
+                                Hi xin tiền á !
+                                <span class="msg_time_send">9:05, hôm nay</span>
+                            </div>
+                            <div class="img_cont_msg">
+                        <img src="images/toi.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                        </div>
+
+                        <!-- người dùng -->
+                        <div class="d-flex justify-content-start mb-4">
+                            <div class="img_cont_msg">
+                                <img src="images/thien1.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                            <div class="msg_cotainer">
+                                Xin nhiêu
+                                <span class="msg_time">9:07, hôm nay</span>
+                            </div>
+                        </div>
+                        <!-- admin -->
+                        <div class="d-flex justify-content-end mb-4">
+                            <div class="msg_cotainer_send">
+                                2 chục
+                                <span class="msg_time_send">9:10, hôm nay</span>
+                            </div>
+                            <div class="img_cont_msg">
+                        <img src="images/toi.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                        </div>
+                        
+                        <!-- người dùng -->
+                        <div class="d-flex justify-content-start mb-4">
+                            <div class="img_cont_msg">
+                                <img src="images/thien1.jpg" class="rounded-circle user_img_msg">
+                            </div>
+                            <div class="msg_cotainer">
+                                Bye, see you
+                                <span class="msg_time">9:10, hôm nay</span>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ===========================phần footer trong chat======================= -->
+                    <div class="card-footer">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                          <span class="input-group-text attach_btn">
+                            <i class="far fa-image mr-3"></i>
+                            <i class="far fa-laugh mr-3"></i>
+                            <i class="fas fa-paperclip mr-3"></i>
+                          </span>
+                            </div>
+                            <textarea rows="0" name="" class="form-control type_msg" placeholder="Nhập ..."></textarea>
+                            <div class="input-group-append">
+                                <span class="input-group-text send_btn"><i class="fas fa-paper-plane"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="js/jquery-3.5.1.slim.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- <script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.js"></script>
+</body>
+</html>
