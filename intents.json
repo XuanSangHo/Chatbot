@@ -46,27 +46,522 @@
       ]
     },
     {
-      "tag": "hocCNTTDN",
+      "tag": "hocnganhDulich",
       "patterns": [
-        "Nen hoc CNTT truong nao o Da Nang",
-        "Nen hoc nganh CNTT truong nao o Da Nang",
-        "Nen hoc cong nghe thong tin truong nao o Da Nang",
-        "Nen hoc IT truong nao o Da Nang"
+        "Hoc du lich o dau tot nhat",
+        "Hoc nganh du lich o dau tot nhat"
       ],
       "responses": [
-        "ban co the lua chon truong DH BK DaNang, DH DuyTan hoac FPT"
+        "mien Bac: DH Ha Noi, DH Van hoa Ha Noi , mien Trung: DH Duy Tan, DH Dong A mien Nam: DH Kinh te TP.HCM, DH Hoa Sen"
+      ]
+    },
+    {
+      "tag": "hocnganhNgonngu",
+      "patterns": [
+        "Hoc Ngon ngu Anh o dau tot nhat",
+        "Hoc nganh Ngon ngu Anh o dau tot nhat",
+        "Hoc Tieng Trung o dau tot nhat",
+        "Hoc nganh Tieng Trung o dau tot nhat",
+        "Hoc Ngon ngu o dau tot nhat",
+        "Hoc nganh Ngon ngu o dau tot nhat"
+      ],
+      "responses": [
+        "mien Bac: DH Ngoai ngu, DH Ngoai thuong Ha Noi , mien Trung: DH Duy Tan, DH Ngoai ngu, DH Quy Nhon, mien Nam: DH Ngoai ngu - TP.HCM, DH Khoa hoc Xa hoi vva Nhan Van"
       ]
     },
     {
       "tag": "hocCNTTMT",
       "patterns": [
         "mien Trung co nhung truong cong nghe thong tin nao",
-        "mien Trung co nhung truong IT nao"
+        "mien Trung co nhung truong CNTT nao",
+        "mien Trung co nhung truong IT nao",
+        "nhung truong dao tao nganh CNTT o mien trung",
+        "nhung truong dao tao nganh cong nghe thong tin o mien trung",
+        "nhung truong dao tao nganh IT o mien trung"
       ],
       "responses": [
         "nhung truong CNTT o mien Trung la: DH BK DaNang, DH DuyTan, DH FPT, DH Khoa hoc Hue"
       ]
     },
+    {
+      "tag": "hocCNTTMB",
+      "patterns": [
+        "mien Bac co nhung truong cong nghe thong tin nao",
+        "mien Bac co nhung truong CNTT nao",
+        "mien Bac co nhung truong IT nao",
+        "nhung truong dao tao nganh CNTT o mien Bac",
+        "nhung truong dao tao nganh cong nghe thong tin o mien Bac",
+        "nhung truong dao tao nganh IT o mien Bac"
+      ],
+      "responses": [
+        "nhung truong CNTT o mien Bac la: DH BK HaNoi, DH Cong nghe- DH Quoc gia HaNoi, DH Le Quy Don"
+      ]
+    },
+    {
+      "tag": "hocCNTTMN",
+      "patterns": [
+        "mien Nam co nhung truong cong nghe thong tin nao",
+        "mien Nam co nhung truong CNTT nao",
+        "mien Nam co nhung truong IT nao",
+        "nhung truong dao tao nganh CNTT o mien Nam",
+        "nhung truong dao tao nganh cong nghe thong tin o mien Nam",
+        "nhung truong dao tao nganh IT o mien Nam"
+      ],
+      "responses": [
+        "nhung truong CNTT o mien Nam la: DH BK TP.HCM, DH Su pham ky thuat HCM, DH CNTT HCM"
+      ]
+    },
+
+    
+    {
+      "tag": "hocYMB",
+      "patterns": [
+        "mien Bac co nhung truong Y nao",
+        "mien Bac co nhung truong Y nao",
+        "nhung truong dao tao nganh Y o mien Bac",
+        "nhung truong dao tao Y o mien Bac"
+      ],
+      "responses": [
+        "nhung truong Y o mien Bac la: DH Y HaNoi, DH Y Duoc HaNoi, DH Y Duoc Thai Binh"
+      ]
+    },
+    {
+      "tag": "hocYMT",
+      "patterns": [
+        "mien Trung co nhung truong Y nao",
+        "mien Trung co nhung truong Y nao",
+        "nhung truong dao tao nganh Y o mien trung",
+        "nhung truong dao tao Y o mien trung"
+      ],
+      "responses": [
+        "nhung truong Y o mien Trung la: DH Y Duoc- DaNang, DH DuyTan, DH Y Duoc Hue"
+      ]
+    },
+    {
+      "tag": "hocYMN",
+      "patterns": [
+        "mien Nam co nhung truong Y nao",
+        "mien Nam co nhung truong Y nao",
+        "nhung truong dao tao nganh Y o mien Nam",
+        "nhung truong dao tao Y o mien Nam"
+      ],
+      "responses": [
+        "nhung truong Y o mien Nam la: DH Y Duoc TP.HCM, DH Y Khoa Pham Ngoc Thach"
+      ]
+    },
+    
+
+    {
+      "tag": "hocQTKDMB",
+      "patterns": [
+        "mien Bac co nhung truong Quan tri kinh doanh nao",
+        "mien Bac co nhung truong Quan tri kinh doanh nao",
+        "nhung truong dao tao nganh Quan tri kinh doanh o mien Bac",
+        "nhung truong dao tao Quan tri kinh doanh o mien Bac",
+        "mien Bac co nhung truong QTKD nao",
+        "mien Bac co nhung truong QTKD nao",
+        "nhung truong dao tao nganh QTKD o mien Bac",
+        "nhung truong dao tao QTKD o mien Bac"
+      ],
+      "responses": [
+        "nhung truong Quan tri kinh doanh o mien Bac la: DH Kinh Te Quoc Dan, DH Ngoai thuong HaNoi, DH Kinh te HaNoi"
+      ]
+    },
+    {
+      "tag": "hocQTKDMT",
+      "patterns": [
+        "mien Trung co nhung truong Quan tri kinh doanh nao",
+        "nhung truong dao tao nganh Quan tri kinh doanh o mien trung",
+        "nhung truong dao tao Quan tri kinh doanh o mien trung",
+        "mien Trung co nhung truong QTKD nao",
+        "nhung truong dao tao nganh QTKD o mien trung",
+        "nhung truong dao tao QTKD o mien trung"
+      ],
+      "responses": [
+        "nhung truong Quan tri kinh doanh o mien Trung la: DH Kinh te DaNang, DH DuyTan, DH Dong A"
+      ]
+    },
+    {
+      "tag": "hocQTKDMN",
+      "patterns": [
+        "mien Nam co nhung truong Quan tri kinh doanh nao",
+        "nhung truong dao tao nganh Quan tri kinh doanh o mien Nam",
+        "nhung truong dao tao Quan tri kinh doanh o mien Nam",
+        "mien Nam co nhung truong QTKD nao",
+        "nhung truong dao tao nganh QTKD o mien Nam",
+        "nhung truong dao tao QTKD o mien Nam"
+      ],
+      "responses": [
+        "nhung truong Quan tri kinh doanh o mien Nam la: DH Kinh te TP.HCM, DH QUoc te TP.HCM, DH Ton Duc Thang"
+      ]
+    },
+
+    {
+      "tag": "hocDLMB",
+      "patterns": [
+        "mien Bac co nhung truong Du lich nao",
+        "nhung truong dao tao nganh Du lich o mien Bac",
+        "nhung truong dao tao Du lich o mien Bac"
+      ],
+      "responses": [
+        "nhung truong Du lich o mien Bac la: DH Quoc gia HaNoi, DH HaNoi, DH Mo HaNoi"
+      ]
+    },
+    {
+      "tag": "hocDLMT",
+      "patterns": [
+        "mien Trung co nhung truong Du lich nao",
+        "nhung truong dao tao nganh Du lich o mien Trung",
+        "nhung truong dao tao Du lich o mien Trung"
+      ],
+      "responses": [
+        "nhung truong Du lich o mien Trung la: DH Hue, DH DuyTan, DH Dong A"
+      ]
+    },
+    {
+      "tag": "hocDlMN",
+      "patterns": [
+        "mien Nam co nhung truong Du lich nao",
+        "nhung truong dao tao nganh Du lich o mien Nam",
+        "nhung truong dao tao Du lich o mien Nam"
+      ],
+      "responses": [
+        "nhung truong Du lich o mien Nam la: DH Quoc gia TP.HCM, DH Kinh te- Tai chinh TP.HCM"
+      ]
+    },
+
+    {
+      "tag": "hocNNMB",
+      "patterns": [
+        "mien Bac co nhung truong Ngon ngu Anh nao",
+        "nhung truong dao tao nganh Ngon ngu Anh o mien Bac",
+        "nhung truong dao tao Ngon ngu Anh o mien Bac",
+        "mien Bac co nhung truong Ngoai ngu nao",
+        "nhung truong dao tao nganh Ngoai ngu o mien Bac",
+        "nhung truong dao tao Ngoai ngu o mien Bac"
+      ],
+      "responses": [
+        "nhung truong Ngoai ngu o mien Bac la: DH Ngoai ngu HaNoi, DH HaNoi, DH Mo HaNoi"
+      ]
+    },
+    {
+      "tag": "hocNNMT",
+      "patterns": [
+        "mien Trung co nhung truong Ngon ngu Anh nao",
+        "nhung truong dao tao nganh Ngon ngu Anh o mien Trung",
+        "nhung truong dao tao Ngon ngu Anh o mien Trung",
+        "mien Trung co nhung truong Ngoai ngu nao",
+        "nhung truong dao tao nganh Ngoai ngu o mien Trung",
+        "nhung truong dao tao Ngoai ngu o mien Trung"
+      ],
+      "responses": [
+        "nhung truong Ngoai ngu o mien Trung la: DH Ngoai Ngu, DH DuyTan, DH Phu Xuan"
+      ]
+    },
+    {
+      "tag": "hocNNMN",
+      "patterns": [
+        "mien Nam co nhung truong Ngon ngu Anh nao",
+        "nhung truong dao tao nganh Ngon ngu Anh o mien Nam",
+        "nhung truong dao tao Ngon ngu Anh o mien Nam",
+        "mien Nam co nhung truong Ngoai ngu nao",
+        "nhung truong dao tao nganh Ngoai ngu o mien Nam",
+        "nhung truong dao tao Ngoai ngu o mien Nam"
+      ],
+      "responses": [
+        "nhung truong Ngoai ngu o mien Nam la: DH Ngoai ngu TP.HCM, DH Ngoai thuong TP.HCM, DH Khoa hoc Xa hoi Nhan van"
+      ]
+    },
+    
+
+    {
+      "tag": "hocCNTTDN",
+      "patterns": [
+        "Nen hoc CNTT truong nao o Da Nang",
+        "Nen hoc nganh CNTT truong nao o Da Nang",
+        "Nen hoc IT truong nao o Da Nang",
+        "truong co nganh CNTT o Da Nang",
+        "hoc CNTT truong nao o Da Nang",
+        "hoc nganh CNTT truong nao o Da Nang",
+        "nhung truong dao tao nganh CNTT o Da Nang",
+        "nhung truong dao tao CNTT o Da Nang",
+        "Da Nang co nhung truong CNTT nao",
+        "nhung truong dao tao nganh CNTT o Da Nang",
+        "nhung truong dao tao CNTT o Da Nang",
+        "Nen hoc cong nghe thong tin truong nao o Da Nang",
+        "Nen hoc nganh cong nghe thong tin truong nao o Da Nang",
+        "Nen hoc IT truong nao o Da Nang",
+        "truong co nganh cong nghe thong tin o Da Nang",
+        "hoc cong nghe thong tin truong nao o Da Nang",
+        "hoc nganh cong nghe thong tin truong nao o Da Nang",
+        "nhung truong dao tao nganh cong nghe thong tin o Da Nang",
+        "nhung truong dao tao cong nghe thong tin o Da Nang",
+        "Da Nang co nhung truong cong nghe thong tin nao",
+        "nhung truong dao tao nganh cong nghe thong tin o Da Nang",
+        "nhung truong dao tao cong nghe thong tin o Da Nang",
+        "Nen hoc IT truong nao o Da Nang",
+        "Nen hoc nganh IT truong nao o Da Nang",
+        "Nen hoc IT truong nao o Da Nang",
+        "truong co nganh IT o Da Nang",
+        "hoc IT truong nao o Da Nang",
+        "hoc nganh IT truong nao o Da Nang",
+        "nhung truong dao tao nganh IT o Da Nang",
+        "nhung truong dao tao IT o Da Nang",
+        "Da Nang co nhung truong IT nao",
+        "nhung truong dao tao nganh IT o Da Nang",
+        "nhung truong dao tao IT o Da Nang"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH BK DaNang, DH DuyTan hoac FPT"
+      ]
+    },
+    
+    {
+      "tag": "hocCNTTHN",
+      "patterns": [
+        "Nen hoc CNTT truong nao o Ha Noi",
+        "Nen hoc nganh CNTT truong nao o Ha Noi",
+        "Nen hoc IT truong nao o Ha Noi",
+        "truong co nganh CNTT o Ha Noi",
+        "hoc CNTT truong nao o Ha Noi",
+        "hoc nganh CNTT truong nao o Ha Noi",
+        "nhung truong dao tao nganh CNTT o Ha Noi",
+        "nhung truong dao tao CNTT o Ha Noi",
+        "Ha Noi co nhung truong CNTT nao",
+        "nhung truong dao tao nganh CNTT o Ha Noi",
+        "nhung truong dao tao CNTT o Ha Noi",
+        "Nen hoc cong nghe thong tin truong nao o Ha Noi",
+        "Nen hoc nganh cong nghe thong tin truong nao o Ha Noi",
+        "Nen hoc IT truong nao o Ha Noi",
+        "truong co nganh cong nghe thong tin o Ha Noi",
+        "hoc cong nghe thong tin truong nao o Ha Noi",
+        "hoc nganh cong nghe thong tin truong nao o Ha Noi",
+        "nhung truong dao tao nganh cong nghe thong tin o Ha Noi",
+        "nhung truong dao tao cong nghe thong tin o Ha Noi",
+        "Ha Noi co nhung truong cong nghe thong tin nao",
+        "nhung truong dao tao nganh cong nghe thong tin o Ha Noi",
+        "nhung truong dao tao cong nghe thong tin o Ha Noi",
+        "Nen hoc IT truong nao o Ha Noi",
+        "Nen hoc nganh IT truong nao o Ha Noi",
+        "Nen hoc IT truong nao o Ha Noi",
+        "truong co nganh IT o Ha Noi",
+        "hoc IT truong nao o Ha Noi",
+        "hoc nganh IT truong nao o Ha Noi",
+        "nhung truong dao tao nganh IT o Ha Noi",
+        "nhung truong dao tao IT o Ha Noi",
+        "Ha Noi co nhung truong IT nao",
+        "nhung truong dao tao nganh IT o Ha Noi",
+        "nhung truong dao tao IT o Ha Noi"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH BK HaNoi, DH Cong nghe Ha Noi hoac FPT"
+      ]
+    },
+    {
+      "tag": "hocCNTTHCM",
+      "patterns": [
+        "Nen hoc CNTT truong nao o Ho Chi Minh",
+        "Nen hoc nganh CNTT truong nao o Ho Chi Minh",
+        "Nen hoc IT truong nao o Ho Chi Minh",
+        "truong co nganh CNTT o Ho Chi Minh",
+        "hoc CNTT truong nao o Ho Chi Minh",
+        "hoc nganh CNTT truong nao o Ho Chi Minh",
+        "nhung truong dao tao nganh CNTT o Ho Chi Minh",
+        "nhung truong dao tao CNTT o Ho Chi Minh",
+        "Ho Chi Minh co nhung truong CNTT nao",
+        "nhung truong dao tao nganh CNTT o Ho Chi Minh",
+        "nhung truong dao tao CNTT o Ho Chi Minh",
+        "Nen hoc cong nghe thong tin truong nao o Ho Chi Minh",
+        "Nen hoc nganh cong nghe thong tin truong nao o Ho Chi Minh",
+        "Nen hoc IT truong nao o Ho Chi Minh",
+        "truong co nganh cong nghe thong tin o Ho Chi Minh",
+        "hoc cong nghe thong tin truong nao o Ho Chi Minh",
+        "hoc nganh cong nghe thong tin truong nao o Ho Chi Minh",
+        "nhung truong dao tao nganh cong nghe thong tin o Ho Chi Minh",
+        "nhung truong dao tao cong nghe thong tin o Ho Chi Minh",
+        "Ho Chi Minh co nhung truong cong nghe thong tin nao",
+        "nhung truong dao tao nganh cong nghe thong tin o Ho Chi Minh",
+        "nhung truong dao tao cong nghe thong tin o Ho Chi Minh",
+        "Nen hoc IT truong nao o Ho Chi Minh",
+        "Nen hoc nganh IT truong nao o Ho Chi Minh",
+        "Nen hoc IT truong nao o Ho Chi Minh",
+        "truong co nganh IT o Ho Chi Minh",
+        "hoc IT truong nao o Ho Chi Minh",
+        "hoc nganh IT truong nao o Ho Chi Minh",
+        "nhung truong dao tao nganh IT o Ho Chi Minh",
+        "nhung truong dao tao IT o Ho Chi Minh",
+        "Ho Chi Minh co nhung truong IT nao",
+        "nhung truong dao tao nganh IT o Ho Chi Minh",
+        "nhung truong dao tao IT o Ho Chi Minh"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH BK HCM, DH Su pham Ky thuat HCM hoac FPT"
+      ]
+    },
+
+
+    {
+      "tag": "hocYHN",
+      "patterns": [
+        "Nen hoc Y truong nao o Ha Noi",
+        "Nen hoc nganh Y truong nao o Ha Noi",
+        "truong co nganh Y o Ha Noi",
+        "hoc Y truong nao o Ha Noi",
+        "hoc nganh Y truong nao o Ha Noi",
+        "nhung truong dao tao nganh Y o Ha Noi",
+        "nhung truong dao tao Y o Ha Noi",
+        "Ha Noi co nhung truong Y nao",
+        "nhung truong dao tao nganh Y o Ha Noi",
+        "nhung truong dao tao Y o Ha Noi"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Duoc Ha Noi, DH Y Ha Noi, Hoc Vien Quan Y"
+      ]
+    },
+    {
+      "tag": "hocYDN",
+      "patterns": [
+        "Nen hoc Y truong nao o Da Nang",
+        "Nen hoc nganh Y truong nao o Da Nang",
+        "truong co nganh Y o Da Nang",
+        "hoc Y truong nao o Da Nang",
+        "hoc nganh Y truong nao o Da Nang",
+        "nhung truong dao tao nganh Y o Da Nang",
+        "nhung truong dao tao Y o Da Nang",
+        "Ha Noi co nhung truong Y nao",
+        "nhung truong dao tao nganh Y o Da Nang",
+        "nhung truong dao tao Y o Da Nang"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Y-Duoc Da nang, DH Ky Thuat Y Duoc Da Nang, DH Duy tan. DH Dong A"
+      ]
+    },
+    {
+      "tag": "hocYHCM",
+      "patterns": [
+        "Nen hoc Y truong nao o Ho Chi Minh",
+        "Nen hoc nganh Y truong nao o Ho Chi Minh",
+        "truong co nganh Y o Ho Chi Minh",
+        "hoc Y truong nao o Ho Chi Minh",
+        "hoc nganh Y truong nao o Ho Chi Minh",
+        "nhung truong dao tao nganh Y o Ho Chi Minh",
+        "nhung truong dao tao Y o Ho Chi Minh",
+        "Ho Chi Minh co nhung truong Y nao",
+        "nhung truong dao tao nganh Y o Ho Chi Minh",
+        "nhung truong dao tao Y o Ho Chi Minh"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Y Duoc TP.HCM, DH Y Khoa Pham Ngoc Thach, DH Quoc Gia TP.HCM"
+      ]
+    },
+
+
+    {
+      "tag": "hocQTKDHN",
+      "patterns": [
+        "Nen hoc QTKD truong nao o Ha Noi",
+        "Nen hoc nganh QTKD truong nao o Ha Noi",
+        "truong co nganh QTKD o Ha Noi",
+        "hoc QTKD truong nao o Ha Noi",
+        "hoc nganh QTKD truong nao o Ha Noi",
+        "nhung truong dao tao nganh QTKD o Ha Noi",
+        "nhung truong dao tao QTKD o Ha Noi",
+        "Ha Noi co nhung truong QTKD nao",
+        "nhung truong dao tao nganh QTKD o Ha Noi",
+        "nhung truong dao tao QTKD o Ha Noi",
+        "Nen hoc Quan Tri Kinh Doanh truong nao o Ha Noi",
+        "Nen hoc nganh Quan Tri Kinh Doanh truong nao o Ha Noi",
+        "truong co nganh Quan Tri Kinh Doanh o Ha Noi",
+        "hoc Quan Tri Kinh Doanh truong nao o Ha Noi",
+        "hoc nganh Quan Tri Kinh Doanh truong nao o Ha Noi",
+        "nhung truong dao tao nganh Quan Tri Kinh Doanh o Ha Noi",
+        "nhung truong dao tao Quan Tri Kinh Doanh o Ha Noi",
+        "Ha Noi co nhung truong Quan Tri Kinh Doanh nao",
+        "nhung truong dao tao nganh Quan Tri Kinh Doanh o Ha Noi",
+        "nhung truong dao tao Quan Tri Kinh Doanh o Ha Noi"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Kinh Te Quoc Dan, DH Ngoai Thuong Ha Noi, DH Kinh Te Ha Noi"
+      ]
+    },
+    {
+      "tag": "hocQTKDDN",
+      "patterns": [
+        "Nen hoc QTKD truong nao o Da Nang",
+        "Nen hoc nganh QTKD truong nao o Da Nang",
+        "truong co nganh QTKD o Da Nang",
+        "hoc QTKD truong nao o Da Nang",
+        "hoc nganh QTKD truong nao o Da Nang",
+        "nhung truong dao tao nganh QTKD o Da Nang",
+        "nhung truong dao tao QTKD o Da Nang",
+        "Da Nang co nhung truong QTKD nao",
+        "nhung truong dao tao nganh QTKD o Da Nang",
+        "nhung truong dao tao QTKD o Da Nang",
+        "Nen hoc Quan Tri Kinh Doanh truong nao o Da Nang",
+        "Nen hoc nganh Quan Tri Kinh Doanh truong nao o Da Nang",
+        "truong co nganh Quan Tri Kinh Doanh o Da Nang",
+        "hoc Quan Tri Kinh Doanh truong nao o Da Nang",
+        "hoc nganh Quan Tri Kinh Doanh truong nao o Da Nang",
+        "nhung truong dao tao nganh Quan Tri Kinh Doanh o Da Nang",
+        "nhung truong dao tao Quan Tri Kinh Doanh o Da Nang",
+        "Da Nang co nhung truong Quan Tri Kinh Doanh nao",
+        "nhung truong dao tao nganh Quan Tri Kinh Doanh o Da Nang",
+        "nhung truong dao tao Quan Tri Kinh Doanh o Da Nang"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Kinh Te Da Nang, DH Duy Tan, DH Dong A"
+      ]
+    },
+    {
+      "tag": "hocQTKDHCM",
+      "patterns": [
+        "Nen hoc QTKD truong nao o Ho Chi Minh",
+        "Nen hoc nganh QTKD truong nao o Ho Chi Minh",
+        "truong co nganh QTKD o Ho Chi Minh",
+        "hoc QTKD truong nao o Ho Chi Minh",
+        "hoc nganh QTKD truong nao o Ho Chi Minh",
+        "nhung truong dao tao nganh QTKD o Ho Chi Minh",
+        "nhung truong dao tao QTKD o Ho Chi Minh",
+        "Ho Chi Minh co nhung truong QTKD nao",
+        "nhung truong dao tao nganh QTKD o Ho Chi Minh",
+        "nhung truong dao tao QTKD o Ho Chi Minh",
+        "Nen hoc Quan Tri Kinh Doanh truong nao o Ho Chi Minh",
+        "Nen hoc nganh Quan Tri Kinh Doanh truong nao o Ho Chi Minh",
+        "truong co nganh Quan Tri Kinh Doanh o Ho Chi Minh",
+        "hoc Quan Tri Kinh Doanh truong nao o Ho Chi Minh",
+        "hoc nganh Quan Tri Kinh Doanh truong nao o Ho Chi Minh",
+        "nhung truong dao tao nganh Quan Tri Kinh Doanh o Ho Chi Minh",
+        "nhung truong dao tao Quan Tri Kinh Doanh o Ho Chi Minh",
+        "Ho Chi Minh co nhung truong Quan Tri Kinh Doanh nao",
+        "nhung truong dao tao nganh Quan Tri Kinh Doanh o Ho Chi Minh",
+        "nhung truong dao tao Quan Tri Kinh Doanh o Ho Chi Minh"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Kinh Te HCM, DH Quoc Te HCM, DH Ton Duc Thang"
+      ]
+    },
+
+    
+    {
+      "tag": "hocDLHN",
+      "patterns": [
+        "Nen hoc Du Lich truong nao o Ha Noi",
+        "Nen hoc nganh Du Lich truong nao o Ha Noi",
+        "truong co nganh Du Lich o Ha Noi",
+        "hoc Du Lich truong nao o Ha Noi",
+        "hoc nganh Du Lich truong nao o Ha Noi",
+        "nhung truong dao tao nganh Du Lich o Ha Noi",
+        "nhung truong dao tao Du Lich o Ha Noi",
+        "Ha Noi co nhung truong Du Lich nao",
+        "nhung truong dao tao nganh Du Lich o Ha Noi",
+        "nhung truong dao tao Du Lich o Ha Noi"
+      ],
+      "responses": [
+        "ban co the lua chon truong DH Y Duoc TP.HCM, DH Y Khoa Pham Ngoc Thach, DH Quoc Gia TP.HCM"
+      ]
+    },
+
+
     {
       "tag": "gioiToan",
       "patterns": [
@@ -167,7 +662,7 @@
         "lam sao de xem review cua moi truong",
         "minh muon xem Review cua moi truong",
         "muon xem reivew cua moi truong thi lam sao",
-        "minh muon xem review",       
+        "minh muon xem review",
         "lam sao de xem review cua truong",
         "minh muon xem Review cua truong",
         "muon xem reivew cua truong thi lam sao"
@@ -215,9 +710,7 @@
         "de co hoc bong o Duy tan thi nhu the nao",
         "de co hoc bong o truong DH Duy tan thi nhu the nao"
       ],
-      "responses": [
-        "dien thi dai hoc >= 23d"
-      ]
+      "responses": ["dien thi dai hoc >= 23d"]
     },
     {
       "tag": "HTXT",
@@ -226,9 +719,7 @@
         "cac hinh thuc xet tuyen cua dh Duy tan",
         "cac hinh thuc xet tuyen cua truong DH Duy tan"
       ],
-      "responses": [
-        "DH Duy Tan xet tuyen bang Hoc ba va Dien thi TN"
-      ]
+      "responses": ["DH Duy Tan xet tuyen bang Hoc ba va Dien thi TN"]
     },
     {
       "tag": "HTXTDH",
@@ -242,13 +733,8 @@
     },
     {
       "tag": "HK",
-      "patterns": [
-        "mot hoc ki keo dai bao lau",
-        "mot ki hoc keo dai bao lau"
-      ],
-      "responses": [
-        "thong thuong thi 4 thang"
-      ]
+      "patterns": ["mot hoc ki keo dai bao lau", "mot ki hoc keo dai bao lau"],
+      "responses": ["thong thuong thi 4 thang"]
     },
     {
       "tag": "HTXTDH",
@@ -267,9 +753,7 @@
         "nganh mui nhon cua truong DH Duy Tan la gi",
         "the manh cua truong DH Duy tan la gi"
       ],
-      "responses": [
-        "nganh mui nhon cua DH Duy Tan la: CNTT, Co Khi"
-      ]
+      "responses": ["nganh mui nhon cua DH Duy Tan la: CNTT, Co Khi"]
     },
     {
       "tag": "DTHB",
@@ -277,9 +761,7 @@
         "lam sao de duy tri hoc bong qua tung nam",
         "duy tri hoc bong qua tung nam"
       ],
-      "responses": [
-        "Diem trung binh toan khoa >=3.2"
-      ]
+      "responses": ["Diem trung binh toan khoa >=3.2"]
     },
     {
       "tag": "TMDH",
@@ -288,25 +770,18 @@
         "nganh mui nhon cua truong DH Duy Tan la gi",
         "the manh cua truong DH Duy tan la gi"
       ],
-      "responses": [
-        "nganh mui nhon cua DH Duy Tan la: CNTT"
-      ]
+      "responses": ["nganh mui nhon cua DH Duy Tan la: CNTT"]
     },
-
-    
 
     {
       "tag": "goodbye",
       "patterns": ["Bye", "tam biet", "Goodbye"],
-      "responses": [
-        "heb gap lai ban"
-      ]
+      "responses": ["heb gap lai ban"]
     },
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "cam on", "ok"],
       "responses": ["khong co gi dau ne"]
     }
-    
   ]
 }

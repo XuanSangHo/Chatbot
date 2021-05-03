@@ -86,7 +86,7 @@
     max-width: 450px;
     padding: 15px;
     border-radius: 15px;
-    /* background: #c3cfe2; */
+    background: #c3cfe2;
   }
   .msg-info {
     display: flex;
@@ -108,6 +108,7 @@
   
   .right-msg {
     flex-direction: row-reverse;
+    background: #579ffb;
   }
   .right-msg .msg-img {
     margin: 0 0 0 10px;
