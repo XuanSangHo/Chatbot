@@ -11,7 +11,7 @@ app.static_folder = 'static'
 #     return unicode(s, "utf8").upper().encode("utf8")
 
 @app.route('/')
-def home():
+def homes():
     return render_template("index.html")
 
 @app.route('/get')

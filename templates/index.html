@@ -1,55 +1,342 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>University</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="#" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.min.css') }}">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Chatbot</title>
 </head>
-
 <body>
-  <!-- partial:index.partial.html -->
-  <section class="msger">
-    <header class="msger-header">
-      <div class="msger-header-title">
-        </i> Chat the chatbot </i>
+    <div id="banner">
+        <div id="bg-banner"></div>
+        <h1 class=" text-capitalize font-weight-bold">university reviews</h1>
+        <h3 class="text-center text-light">
+          A place to share basic information about university
+        </h3>
       </div>
-    </header>
 
-    <main class="msger-chat">
-      <div class="msg left-msg">
-        <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
-
-        <div class="msg-bubble">
-          <div class="msg-info">
-            <div class="msg-info-name">Chatty</div>
-            <div class="msg-info-time"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 p-0" id="sidebar">
+            <div id="filter" class="text-center">
+              <a href="#" class="map d-block text-center">
+                <i class="fas fa-map-marked-alt"></i> Xem vị trí
+              </a>
+              <form action="" class="filter-form">
+                <div class="form-group">
+                  <label for="" class="region d-block font-weight-bold">
+                    Tìm kiếm theo vùng
+                  </label>
+                  <label for="" class="locate d-block">
+                    <input type="radio" name="locate" value="" id="bac" />
+                    <label for="bac">Miền Bắc</label>
+                  </label>
+                  <label for="" class="locate d-block">
+                    <input type="radio" name="locate" value="" id="trung" />
+                    <label for="trung">Miền Trung</label>
+                  </label>
+                  <label for="" class="locate  d-block">
+                    <input type="radio" name="locate" value="" id="nam" />
+                    <label for="nam">Miền Nam</label>
+                  </label>
+                  <hr />
+                   <!-- -----------end tìm kiếm theo vùng---------- --> 
+                  <label for="" class="region d-block font-weight-bold mb-3">
+                    Nhóm ngành
+                  </label>
+                  <label for="" class="locate d-block margin-r-10">
+                    <select
+                      name="nhomNghanh"
+                      id="nhomNghanh"
+                      class="form-control"
+                    >
+                      <option value="">Tất cả nhóm nghành</option>
+                      <option value="">Sản xuất và chế biến</option>
+                      <option value="">Kiến trúc và xây dựng</option>
+                      <option value="">Kinh doanh</option>
+                      <option value="">Công nghệ và thông tin</option>
+                      <option value="">Luật và nhân văn</option>
+                      <option value="">Nghệ thuật-thẩm mỹ-đồ họa</option>
+                      <option value="">Báo chí-khoa học và xã hội</option>
+                      <option value="">Khoa học cơ bản</option>
+                      <option value="">Sư Phạm</option>
+                      <option value="">Nông-lâm-ngư nghiệp</option>
+                    </select>
+                  </label>
+                  <hr />
+                  <!-- -----------end nhóm nghành---------- --> 
+                  <label for="" class="region d-block font-weight-bold mb-3">
+                    Ngành
+                  </label>
+                  <label for="" class="locate d-block margin-r-10">
+                    <select
+                      name="nhomNghanh"
+                      id="nhomNghanh"
+                      class="form-control"
+                    >
+                      <option value="">Tất cả nghành</option>
+                    </select>
+                  </label>
+                  <hr />
+                   <!-- end ngành  --> 
+                  <label for="" class="region d-block font-weight-bold mb-3">
+                    Loại trường
+                  </label>
+                  <label for="" class="locate d-block">
+                    <input
+                      type="checkbox"
+                      name="loaiTruong"
+                      value=""
+                      id="DHCL"
+                    />
+                    <label for="DHCL">Đại học công lập</label>
+                  </label>
+                  <label for="" class="locate d-block">
+                    <input
+                      type="checkbox"
+                      name="loaiTruong"
+                      value=""
+                      id="DHTH"
+                    />
+                    <label for="DHTH">Đại học tư thục</label>
+                  </label>
+                  <label for="" class="locate d-block">
+                    <input type="checkbox" name="loaiTruong" value="" id="CD" />
+                    <label for="CD">Cao đẳng</label>
+                  </label>
+                  <label for="" class="locate d-block">
+                    <input
+                      type="checkbox"
+                      name="loaiTruong"
+                      value=""
+                      id="DTN"
+                    />
+                    <label for="DTN">Đào tạo nghề</label>
+                  </label>
+                   <!-- end --> 
+                  <button class="btn btn-loc">Lọc</button>
+                </div>
+              </form>
+            </div>
           </div>
+           <!-- ket thuc sidebar --> 
+          <div class="col-md-9" id="content">
+            <div class="highlight-topic">
+              <div class="row">
+                <div class="col-md-1">
+                  <div id="img-logo">
+                    <a href="#">
+                      <img
+                        src="https://cdn.duytan.edu.vn/upload/images/logoDT-70.png"
+                        alt=""
+                        class="anh logo-university img-fluid"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-11 padding-left-32">
+                  <a href="#" class="university-name">
+                    Đại Học Duy Tân
+                  </a>
+                  <span class="address">
+                    254, Nguyễn Văn Linh, Hải Châu, Đà Nẵng
+                  </span>
+                  <span class="count-rate mr-3">
+                    <i class="fas fa-star"></i> 200 đánh giá
+                  </span>
+                  <span class="count-comment">
+                    <i class="fas fa-comments"></i> 462 bình luận
+                  </span>
 
-          <div class="msg-text">
-            Hi, toi la ChatBot de giup ban giai dap cac thac mac 😄
+                  <p class="demo-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Maiores enim ab qui aperiam iste eos voluptate alias iure
+                    voluptatum, amet culpa, vero, consectetur voluptatem!
+                    Reprehenderit aut, tempora, quasi suscipit minima fugiat
+                    consequatur quas nisi at est maiores ab iure vero dolorem
+                    rem distinctio? Tempora, eligendi deserunt sint perspiciatis
+                    quis recusandae.
+                  </p>
+
+                  <a href="#" class="detail">
+                    Chi tiết <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <i class="far fa-bookmark"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="highlight-topic">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div id="img-logo">
+                      <a href="#">
+                        <img
+                          src="https://cdn.duytan.edu.vn/upload/images/logoDT-70.png"
+                          alt=""
+                          class="anh logo-university img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-11 padding-left-32">
+                    <a href="#" class="university-name">
+                      Đại Học Duy Tân
+                    </a>
+                    <span class="address">
+                      254, Nguyễn Văn Linh, Hải Châu, Đà Nẵng
+                    </span>
+                    <span class="count-rate mr-3">
+                      <i class="fas fa-star"></i> 200 đánh giá
+                    </span>
+                    <span class="count-comment">
+                      <i class="fas fa-comments"></i> 462 bình luận
+                    </span>
+  
+                    <p class="demo-content">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Maiores enim ab qui aperiam iste eos voluptate alias iure
+                      voluptatum, amet culpa, vero, consectetur voluptatem!
+                      Reprehenderit aut, tempora, quasi suscipit minima fugiat
+                      consequatur quas nisi at est maiores ab iure vero dolorem
+                      rem distinctio? Tempora, eligendi deserunt sint perspiciatis
+                      quis recusandae.
+                    </p>
+  
+                    <a href="#" class="detail">
+                      Chi tiết <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <i class="far fa-bookmark"></i>
+                  </div>
+                </div>
+              </div><div class="highlight-topic">
+                <div class="row">
+                  <div class="col-md-1">
+                    <div id="img-logo">
+                      <a href="#">
+                        <img
+                          src="https://cdn.duytan.edu.vn/upload/images/logoDT-70.png"
+                          alt=""
+                          class="anh logo-university img-fluid"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-11 padding-left-32">
+                    <a href="#" class="university-name">
+                      Đại Học Duy Tân
+                    </a>
+                    <span class="address">
+                      254, Nguyễn Văn Linh, Hải Châu, Đà Nẵng
+                    </span>
+                    <span class="count-rate mr-3">
+                      <i class="fas fa-star"></i> 200 đánh giá
+                    </span>
+                    <span class="count-comment">
+                      <i class="fas fa-comments"></i> 462 bình luận
+                    </span>
+  
+                    <p class="demo-content">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Maiores enim ab qui aperiam iste eos voluptate alias iure
+                      voluptatum, amet culpa, vero, consectetur voluptatem!
+                      Reprehenderit aut, tempora, quasi suscipit minima fugiat
+                      consequatur quas nisi at est maiores ab iure vero dolorem
+                      rem distinctio? Tempora, eligendi deserunt sint perspiciatis
+                      quis recusandae.
+                    </p>
+  
+                    <a href="#" class="detail">
+                      Chi tiết <i class="fas fa-chevron-right"></i>
+                    </a>
+                    <i class="far fa-bookmark"></i>
+                  </div>
+                </div>
+              </div>
+
+             <!-- ------phân trang  --> 
+
+            <nav class="pagination justify-content-center">
+              <ul class="pagination">
+                <li class="page-item">
+                  <span class="page-link">Trước</span>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link">
+                    1
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link">
+                    2
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link">
+                    3
+                  </a>
+                </li>
+                <li class="page-item">
+                  <a href="" class="page-link">
+                    ...
+                  </a>
+                </li>
+                <li class="page-item">
+                  <span class="page-link">Sau</span>
+                </li>
+              </ul>
+            </nav>
           </div>
+          <!-- =========end content=========== --> 
         </div>
       </div>
+    </div>
 
-    </main>
+    <!-- chatbot -->
+    <div class="chatbot">
+    <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title">
+              <div class="title-chatbot">
+                  <img src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-0/p100x100/117655869_908926036256449_3716122484987695702_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=58c789&_nc_ohc=SpGI6QyyViIAX9iFzK_&_nc_ht=scontent.fdad3-3.fna&tp=6&oh=31232114e0306496207543cd93410c25&oe=60C747E3" />
+                    <p> Chatbot of C2.SE24 </p>
+              </div>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+          </div>
+        </header>
+    
+        <main class="msger-chat">
+          <div class="msg left-msg">
+            <div class="msg-img" style="background-image: url(https://image.flaticon.com/icons/svg/327/327779.svg)"></div>
+    
+            <div class="msg-bubble">
+              <div class="msg-info">
+                <div class="msg-info-name">Bot</div>
+                <div class="msg-info-time"></div>
+              </div>
+    
+              <div class="msg-text">
+                Hi, toi la Bot de giup ban giai dap cac thac mac 😄
+              </div>
+            </div>
+          </div>
+    
+        </main>
+    
+        <form class="msger-inputarea">
+          <input type="text" class="msger-input" id="textInput" placeholder="Vui log nhap Tieng Viet khong dau..." autofocus>
+          <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+      </section>
+      </div>
 
-    <form class="msger-inputarea">
-      <input type="text" class="msger-input" id="textInput" placeholder="Vui log nhap Tieng Viet khong dau..." autofocus>
-      <button type="submit" class="msger-send-btn">Send</button>
-    </form>
-  </section>
-  <!-- partial -->
-  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+      <!-- script chatbot -->
+
+      <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
   <script>
 
     const msgerForm = get(".msger-inputarea");
@@ -79,7 +366,7 @@
       const msgHTML = `
         <div class="msg ${side}-msg">
         <div class="msg-img" style="background-image: url(${img})"></div>
-        <div class="msg-bubble" style="background-color: linear-gradient(to bottom right, #0a18c2, #5c0a6bd6, #c70debe3)">
+        <div class="msg-bubble ${side}-bg">
             <div class="msg-info">
             <div class="msg-info-name">${name}</div>
             <div class="msg-info-time">${formatDate(new Date())}</div>
@@ -119,10 +406,6 @@
       return `${h.slice(-2)}:${m.slice(-2)}`;
     }
 
-
-
   </script>
-
 </body>
-
 </html>
