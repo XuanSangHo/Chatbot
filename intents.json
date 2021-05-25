@@ -25,7 +25,22 @@
         "Hoc CNTT o dau tot nhat",
         "Hoc nganh cong nghe thong tin o dau tot nhat",
         "Hoc nganh IT o dau tot nhat",
-        "Hoc nganh CNTT o dau tot nhat"
+        "Hoc nganh CNTT o dau tot nhat",
+        "nen hoc nganh cong nghe thong tin o dau",
+        "cac truong dao tao nganh cong nghe thong tin",
+        "nen hoc nganh CNTT o dau",
+        "cac truong dao tao nganh CNTT",
+        "nen hoc nganh IT o dau",
+        "cac truong dao tao nganh IT",
+        "Hoc cong nghe thong tin o dau tot nhat",
+        "Hoc IT o dau tot nhat",
+        "Hoc CNTT o dau tot nhat",
+        "nen hoc cong nghe thong tin o dau",
+        "cac truong dao tao cong nghe thong tin",
+        "nen hoc CNTT o dau",
+        "cac truong dao tao CNTT",
+        "nen hoc IT o dau",
+        "cac truong dao tao IT"
       ],
       "responses": [
         "mien Bac: DH BK HaNoi, mien Trung: DH BK DaNang, mien Nam: DH BK HCM"
@@ -33,23 +48,49 @@
     },
     {
       "tag": "hocnganhY",
-      "patterns": ["Hoc Y o dau tot nhat", "Hoc nganh y o dau tot nhat"],
+      "patterns": [
+        "Hoc Y o dau tot nhat",
+        "Hoc nganh y o dau tot nhat",
+        "nen hoc nganh Y o dau",
+        "cac truong dao tao nganh Y",
+        "Hoc y o dau tot nhat",
+        "nen hoc Y o dau",
+        "cac truong dao tao Y"
+      ],
       "responses": [
         "mien Bac: DH Y HaNoi, DH Duoc HaNoi , mien Trung: DH Y Duoc Hue, mien Nam: DH Y Duoc TP.HCM"
       ]
     },
     {
       "tag": "hocnganhQTKD",
-      "patterns": ["Hoc Y o dau tot nhat", "Hoc nganh y o dau tot nhat"],
+      "patterns": [
+        "Hoc nganh quan tri kinh doanh o dau tot nhat",
+        "Hoc nganh QTKD o dau tot nhat",
+        "nen hoc nganh quan tri kinh doanh o dau",
+        "cac truong dao tao nganh quan tri kinh doanh",
+        "nen hoc nganh QTKD o dau",
+        "cac truong dao tao nganh QTKD",
+        "Hoc quan tri kinh doanh o dau tot nhat",
+        "Hoc QTKD o dau tot nhat",
+        "nen hoc quan tri kinh doanh o dau",
+        "cac truong dao tao quan tri kinh doanh",
+        "nen hoc QTKD o dau",
+        "cac truong dao tao QTKD"
+      ],
       "responses": [
-        "mien Bac: DH Y HaNoi, DH Duoc HaNoi , mien Trung: DH Y Duoc Hue, mien Nam: DH Y Duoc TP.HCM"
+        "mien Bac: DH Ngoai thuong, DH Kinh te quoc dan, mien Trung: DH Kinh te DN, mien Nam: DH Kinh te HCM"
       ]
     },
     {
       "tag": "hocnganhDulich",
       "patterns": [
         "Hoc du lich o dau tot nhat",
-        "Hoc nganh du lich o dau tot nhat"
+        "Hoc nganh du lich o dau tot nhat",
+        "nen hoc nganh du lich o dau",
+        "cac truong dao tao nganh du lich",
+        "Hoc du lich o dau tot nhat",
+        "nen hoc du lich o dau",
+        "cac truong dao tao du lich"
       ],
       "responses": [
         "mien Bac: DH Ha Noi, DH Van hoa Ha Noi , mien Trung: DH Duy Tan, DH Dong A mien Nam: DH Kinh te TP.HCM, DH Hoa Sen"
@@ -63,7 +104,18 @@
         "Hoc Tieng Trung o dau tot nhat",
         "Hoc nganh Tieng Trung o dau tot nhat",
         "Hoc Ngon ngu o dau tot nhat",
-        "Hoc nganh Ngon ngu o dau tot nhat"
+        "Hoc nganh Ngon ngu o dau tot nhat",
+        "nen hoc nganh Ngon ngu Anh o dau",
+        "cac truong dao tao nganh Ngon ngu Anh",
+        "Hoc Ngoai ngu o dau tot nhat",
+        "Hoc nganh Ngoai ngu o dau tot nhat",
+        "nen hoc nganh Ngoai ngu o dau",
+        "cac truong dao tao nganh Ngoai ngu",
+        "nen hoc Ngon ngu Anh o dau",
+        "cac truong dao tao Ngon ngu Anh",
+        "Hoc Ngoai ngu o dau tot nhat",
+        "nen hoc Ngoai ngu o dau",
+        "cac truong dao tao Ngoai ngu"
       ],
       "responses": [
         "mien Bac: DH Ngoai ngu, DH Ngoai thuong Ha Noi , mien Trung: DH Duy Tan, DH Ngoai ngu, DH Quy Nhon, mien Nam: DH Ngoai ngu - TP.HCM, DH Khoa hoc Xa hoi vva Nhan Van"
@@ -911,7 +963,7 @@
       ],
       "responses": ["thong thuong thi 4 thang"]
     },
-    
+
     {
       "tag": "NH",
       "patterns": [
@@ -958,7 +1010,6 @@
       "responses": ["nganh mui nhon cua DH Duy Tan la: CNTT, Co Khi"]
     },
 
-    
     {
       "tag": "LHB",
       "patterns": [
@@ -979,6 +1030,44 @@
       ],
       "responses": ["Diem trung binh toan khoa >=3.2"]
     },
+    
+    {
+      "tag": "TT",
+      "patterns": [
+        "minh muon tim truong",
+        "muon tim truong",
+        "minh muon tim truong DH",
+        "muon tim truong DH",
+        "minh muon tim truong dai hoc",
+        "muon tim truong dai hoc",
+        "toi muon tim truong",
+        "toi muon tim truong DH",
+        "toi muon tim truong dai hoc"
+      ],
+      "responses": ["ban vui long nhap cau hoi"]
+    },
+
+    {
+      "tag": "VTDHDT",
+      "patterns": [
+        "dai hoc Duy Tan o dau",
+        "DH Duy Tan nam o dau",
+        "dai hoc Duy Tan o thanh pho nao",
+        "DH Duy Tan o thanh pho nao"
+      ],
+      "responses": ["Dai hoc Duy Tan nam o Tp Da Nang"]
+    },
+
+    {
+      "tag": "CSDHDT",
+      "patterns": [
+        "dai hoc Duy Tan co may co so",
+        "dai hoc Duy Tan co bao nhieu co so",
+        "DH Duy Tan co may co so",
+        "DH Duy Tan co bao nhieu co so"
+      ],
+      "responses": ["Dai hoc Duy Tan co 6 co so"]
+    },
 
     {
       "tag": "HDDH",
@@ -990,9 +1079,10 @@
         "cac hoat dong o DH",
         "DH co cac hoat dong gi"
       ],
-      "responses": ["co cac hoat dong nhu: the thao, hien mau tinh nguyenj, mua he xanh..."]
+      "responses": [
+        "co cac hoat dong nhu: the thao, hien mau tinh nguyen, mua he xanh..."
+      ]
     },
-
 
     {
       "tag": "KTX",
@@ -1002,16 +1092,17 @@
         "DH co ki tuc xa khong",
         "co ki tuc xa o DH khong"
       ],
-      "responses": ["Diem trung binh toan khoa >=3.2"]
+      "responses": ["Co chu"]
     },
 
     {
       "tag": "NY",
       "patterns": [
-        "len dai hoc co nguoi yeu khong"
+        "len dai hoc co nguoi yeu khong",
+        "len DH co nguoi yeu hong"
       ],
-      "responses": ["cai nay thi minh khong chac"]
-    },    
+      "responses": ["tuy vao ban thoi"]
+    },
 
     {
       "tag": "goodbyee",
@@ -1021,7 +1112,7 @@
     {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "cam on", "ok"],
-      "responses": ["khong co gi dau ne"]
+      "responses": ["khong co gi"]
     }
   ]
 }
