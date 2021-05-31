@@ -733,6 +733,9 @@
       "patterns": [
         "minh gioi Toan thi hoc duoc nhung nganh gi",
         "minh gioi mon Toan thi hoc duoc nhung nganh gi",
+        "hoc gioi Toan nen hoc nganh gi",
+        "minh gioi Toan thi chon duoc nhung nganh gi",
+        "minh gioi mon Toan thi chon duoc nhung nganh gi",
         "hoc gioi Toan nen chon nganh gi"
       ],
       "responses": [
@@ -744,6 +747,9 @@
       "patterns": [
         "minh gioi Van thi hoc duoc nhung nganh gi",
         "minh gioi mon Van thi hoc duoc nhung nganh gi",
+        "hoc gioi Van nen hoc nganh gi",
+        "minh gioi Van thi chon duoc nhung nganh gi",
+        "minh gioi mon Van thi chon duoc nhung nganh gi",
         "hoc gioi Van nen chon nganh gi"
       ],
       "responses": ["ban co the tham khao: nganh Bao Chi, nganh Marketing"]
@@ -753,6 +759,9 @@
       "patterns": [
         "minh gioi Anh thi hoc duoc nhung nganh gi",
         "minh gioi mon Anh thi hoc duoc nhung nganh gi",
+        "hoc gioi Anh nen hoc nganh gi",
+        "minh gioi Anh thi chon duoc nhung nganh gi",
+        "minh gioi mon Anh thi chon duoc nhung nganh gi",
         "hoc gioi Anh nen chon nganh gi"
       ],
       "responses": [
@@ -764,6 +773,9 @@
       "patterns": [
         "minh gioi Sinh thi hoc duoc nhung nganh gi",
         "minh gioi mon Sinh thi hoc duoc nhung nganh gi",
+        "hoc gioi Sinh nen hoc nganh gi",
+        "minh gioi Sinh thi chon duoc nhung nganh gi",
+        "minh gioi mon Sinh thi chon duoc nhung nganh gi",
         "hoc gioi Sinh nen chon nganh gi"
       ],
       "responses": [
@@ -775,6 +787,9 @@
       "patterns": [
         "minh gioi Ly thi hoc duoc nhung nganh gi",
         "minh gioi mon Ly thi hoc duoc nhung nganh gi",
+        "hoc gioi Ly nen hoc nganh gi",
+        "minh gioi Ly thi chon duoc nhung nganh gi",
+        "minh gioi mon Ly thi chon duoc nhung nganh gi",
         "hoc gioi Ly nen chon nganh gi"
       ],
       "responses": ["ban co the tham khao: nganh CNTT, nganh Co dien tu-Co ki"]
@@ -784,7 +799,10 @@
       "patterns": [
         "minh gioi Hoa thi hoc duoc nhung nganh gi",
         "minh gioi mon Hoa thi hoc duoc nhung nganh gi",
-        "hoc gioi Ly nen chon nganh gi"
+        "hoc gioi Hoa nen hoc nganh gi",
+        "minh gioi Hoa thi chon duoc nhung nganh gi",
+        "minh gioi mon Hoa thi chon duoc nhung nganh gi",
+        "hoc gioi Hoa nen chon nganh gi"
       ],
       "responses": [
         "ban co the tham khao: nganh Cong nghe thuc pham, nganh vat lieu cong nghiep cao"
@@ -795,6 +813,9 @@
       "patterns": [
         "minh gioi Su thi hoc duoc nhung nganh gi",
         "minh gioi mon Su thi hoc duoc nhung nganh gi",
+        "hoc gioi Su nen hoc nganh gi",
+        "minh gioi Su thi chon duoc nhung nganh gi",
+        "minh gioi mon Su thi chon duoc nhung nganh gi",
         "hoc gioi Su nen chon nganh gi"
       ],
       "responses": [
@@ -806,6 +827,9 @@
       "patterns": [
         "minh gioi Dia thi hoc duoc nhung nganh gi",
         "minh gioi mon Dia thi hoc duoc nhung nganh gi",
+        "hoc gioi Su nen hoc nganh gi",
+        "minh gioi Dia thi chon duoc nhung nganh gi",
+        "minh gioi mon Dia thi chon duoc nhung nganh gi",
         "hoc gioi Su nen chon nganh gi"
       ],
       "responses": ["ban co the tham khao: Nha Nghien cuu Dia ly- Dia chat"]
@@ -819,7 +843,7 @@
         "muon biet tat ca nganh hoc o Duy Tan thi vao dau de xem",
         "muon biet tat ca nganh hoc o truong DH Duy Tan thi vao dau de xem"
       ],
-      "responses": ["ban vao link nay ne: http://127.0.0.1:5000/"]
+      "responses": ["ban vao link nay: http://127.0.0.1:5000/"]
     },
     {
       "tag": "TKnganh",
