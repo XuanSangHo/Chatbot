@@ -59,8 +59,8 @@ html {
   padding-left: 5px;
   text-align: center;
   border-bottom: var(--border);
-  background: #eee;
-  color: #666;
+  background: #2b392e;
+  color: #ffffff;
 }
 
 .msger-header-title {
@@ -83,17 +83,20 @@ html {
 
 .title-chatbot > p {
   font-weight: 700;
+  display: block;
+  width: 215px;
   margin-top: auto;
   margin-bottom: auto;
 }
 .msger-header-title > a {
   justify-content: end;
   text-align: right;
-  margin-left: 35%;
+  margin-left: 18%;
 }
 .msger-header-title > a > svg {
   font-size: 40px;
   font-weight: 0;
+  color: #666;
 }
 
 .msger-chat {

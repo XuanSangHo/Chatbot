@@ -998,7 +998,7 @@
     {
       "tag": "NH",
       "patterns": [
-        "mot Nam hoc keo dai bao lau",
+        "mot nam hoc keo dai bao lau",
         "thong thuong mot nam hoc keo dai bao lau",
         "mot Nam hoc khoang bao nhieu thang",
         "mot Nam hoc keo dai bao nhieu thang"
@@ -1162,14 +1162,14 @@
 
     
     {
-      "tag": "NH",
+      "tag": "NHoc",
       "patterns": [
         "nhung nganh hot nhat",
         "cac nganh hot nhat",
         "nhung nganh hot nhat hien nay",
         "cac nganh hot nhat hien nay",
-        "nhung nganh nao hot nhat",
-        "cac nganh nao hot nhat",
+        "nganh hoc nao hot nhat",
+        "cac nganh hoc nao hot nhat",
         "nhung nganh nao hot nhat hien nay",
         "cac nganh nao hot nhat hien nay",
         "hien nay nganh hot nhat",
@@ -1179,6 +1179,104 @@
       "responses": ["Nganh: CNTT, Nhan vien Kinh doanh, Phien dich vien, Ky su cong nghe o to..."]
     },
 
+    {
+      "tag": "XetTCNTT",
+      "patterns": [
+        "nganh cong nghe thong tin xet tuyen nhung khoi nao",
+        "nganh cong nghe thong tin xet tuyen nhung khoi thi nao",
+        "nganh CNTT xet tuyen nhung khoi nao",
+        "nganh CNTT xet tuyen nhung khoi thi nao",
+        "nganh IT xet tuyen nhung khoi nao",
+        "nganh IT xet tuyen nhung khoi thi nao",
+        "nganh cong nghe thong tin xet tuyen nhung to hop nao",
+        "nganh cong nghe thong tin xet tuyen nhung to hop mon nao",
+        "nganh CNTT xet tuyen nhung to hop nao",
+        "nganh CNTT xet tuyen nhung to hop mon nao",
+        "nganh IT xet tuyen nhung to hop nao",
+        "nganh IT xet tuyen nhung to hop mon nao"
+      ],
+      "responses": ["cac khoi cua nganh CNTT la: A0, A1, D1, D7, D10"]
+    },
+
+    {
+      "tag": "XetTQTKD",
+      "patterns": [
+        "nganh quan tri kinh doanh xet tuyen nhung khoi nao",
+        "nganh quan tri kinh doanh xet tuyen nhung khoi thi nao",
+        "nganh QTKD xet tuyen nhung khoi nao",
+        "nganh QTKD xet tuyen nhung khoi thi nao"
+      ],
+      "responses": ["cac khoi cua nganh quan trinh kinh doanh la: A00, A01, D01."]
+    },
+
+    {
+      "tag": "XetTY",
+      "patterns": [
+        "nganh y xet tuyen nhung khoi nao",
+        "nganh y xet tuyen nhung khoi thi nao"
+      ],
+      "responses": ["cac khoi cua nganh Y la: A00, A02, B00"]
+    },
+
+    {
+      "tag": "XetTNN",
+      "patterns": [
+        "nganh ngon ngu anh xet tuyen nhung khoi nao",
+        "nganh ngon ngu anh xet tuyen nhung khoi thi nao",
+        "nganh ngoai ngu xet tuyen nhung khoi nao",
+        "nganh ngoai ngu xet tuyen nhung khoi thi nao"
+      ],
+      "responses": ["cac khoi cua nganh ngon ngu Anh la: D09, D14, D1, A01"]
+    },
+
+    {
+      "tag": "TTKHA",
+      "patterns": [
+        "Khoi A gom nhung mon gi",
+        "Thi vao khoi A gom nhung mon gi",
+        "Khoi A gom mon gi",
+        "Thi vao khoi A gom mon gi",
+        "to hop mon cua khoi A la gi"
+      ],
+      "responses": ["khoi A gom nhung mon: Toan - Ly - Hoa, Toan - Ly - Anh..."]
+    },
+
+    
+    {
+      "tag": "TTKHB",
+      "patterns": [
+        "Khoi B gom nhung mon gi",
+        "Thi vao khoi B gom nhung mon gi",
+        "Khoi B gom mon gi",
+        "Thi vao khoi B gom mon gi",
+        "to hop mon cua khoi B la gi"
+      ],
+      "responses": ["khoi B gom nhung mon: Toan - Sinh - Hoa, Toan - Sinh - Lich su, Toan - Sinh - Dia..."]
+    },
+
+    {
+      "tag": "TTKHC",
+      "patterns": [
+        "Khoi C gom nhung mon gi",
+        "Thi vao khoi C gom nhung mon gi",
+        "Khoi C gom mon gi",
+        "Thi vao khoi C gom mon gi",
+        "to hop mon cua khoi C la gi"
+      ],
+      "responses": ["khoi C gom nhung mon: Toan - Van - Ly, Toan - Van - Hoa"]
+    },
+
+    {
+      "tag": "TTKHD",
+      "patterns": [
+        "Khoi D gom nhung mon gi",
+        "Thi vao khoi D gom nhung mon gi",
+        "Khoi D gom mon gi",
+        "Thi vao khoi D gom mon gi",
+        "to hop mon cua khoi D la gi"
+      ],
+      "responses": ["khoi D gom nhung mon: Toan - Van - Ngoai ngu"]
+    },
 
     {
       "tag": "NY",
